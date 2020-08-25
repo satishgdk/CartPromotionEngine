@@ -1,0 +1,6 @@
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\bin\Debug\FlexiCartApp.exe.config
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\bin\Debug\FlexiCartApp.exe
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\bin\Debug\FlexiCartApp.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\obj\Debug\FlexiCartApp.csprojAssemblyReference.cache
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\obj\Debug\FlexiCartApp.exe
+C:\MyPractice\satishgdk\CartPromotionEngine\FlexiCartApp\obj\Debug\FlexiCartApp.pdb

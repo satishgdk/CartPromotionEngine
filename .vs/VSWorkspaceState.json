@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FlexiCartApp"
+    "\\PromotionEngine",
+    "\\PromotionEngine\\Interfaces"
   ],
-  "SelectedNode": "\\FlexiCartApp",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,5 @@
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionEngine\obj\Debug\PromotionEngine.csprojAssemblyReference.cache
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionEngine\bin\Debug\PromotionEngine.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionEngine\bin\Debug\PromotionEngine.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionEngine\obj\Debug\PromotionEngine.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionEngine\obj\Debug\PromotionEngine.pdb
