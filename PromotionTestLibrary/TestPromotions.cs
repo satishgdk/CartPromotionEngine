@@ -56,6 +56,7 @@ namespace PromotionTestLibrary
             cart.AddProduct(products.First(p => p.SKU == "B"), 1);
             cart.AddProduct(products.First(p => p.SKU == "C"), 1);
 
+            cart.AddPromotions(lstActivePromotions);
 
             // setup promotions to cart 
             // need to introduce a way to handle promotions to Cart and robust Product handling mechanism
