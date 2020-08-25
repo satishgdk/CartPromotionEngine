@@ -41,8 +41,8 @@ namespace PromotionEngine.Repositories
                     RuleID =3 , RuleName =" C & D " , Description = "C & D for 30 " , IsActive =true ,
                      Groups = new List<Criteria>()
                      {
-                         new Criteria () { ProductName ="C" , Qty = 1  ,OfferedPrice =30},
-                         new Criteria () { ProductName ="D" , Qty = 1 , OfferedPrice =  0 }
+                         new Criteria () { ProductName ="C" , Qty = 1  ,OfferedPrice =0},
+                         new Criteria () { ProductName ="D" , Qty = 1 , OfferedPrice =  30 }
 
                      }
                  }
