@@ -1,0 +1,16 @@
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\NUnit3.TestAdapter.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\NUnit3.TestAdapter.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.engine.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.engine.api.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.engine.core.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\PromotionTestLibrary.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\PromotionTestLibrary.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.framework.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\PromotionEngine.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\PromotionEngine.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.framework.pdb
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\bin\Debug\nunit.framework.xml
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\obj\Debug\PromotionTestLibrary.csprojAssemblyReference.cache
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\obj\Debug\PromotionTestLibrary.csproj.CopyComplete
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\obj\Debug\PromotionTestLibrary.dll
+C:\MyPractice\satishgdk\CartPromotionEngine\PromotionTestLibrary\obj\Debug\PromotionTestLibrary.pdb
