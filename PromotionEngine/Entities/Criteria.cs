@@ -17,4 +17,14 @@ namespace PromotionEngine.Entities
 
         public int OfferedPrice { get; set; }
     }
+
+    /// <summary>
+    /// class to extend the Criteria with out breaking anything -new feature 
+    /// </summary>
+    public class DiscountCriteria : Criteria
+    {
+
+        public decimal Discount { get; set; }
+    }
+
 }

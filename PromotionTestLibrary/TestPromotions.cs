@@ -191,6 +191,67 @@ namespace PromotionTestLibrary
 
             Assert.AreEqual(actual, expected);
         }
+
+
+        [Test]
+        public void TestScenario4()
+        {
+            //1 Arrange
+            // setup inputs 
+
+            RuleRepository promotionDB = new RuleRepository();
+
+            var lstFestivalOffers = promotionDB.GetFestivalOffers();
+            ProductRepository productContext = new ProductRepository();
+            var products = productContext.Products;
+
+            /*
+              Setup unitPrices
+              Set Active Promotions
+              3 of A's for 130
+              2 of B's for  45
+              C  80% off for 4
+
+            Scenario
+
+            3 *A 130  
+            5 * B 45 +45 + 1* 30
+            2 * C -  8
+            Total = 258
+
+             */
+
+
+            decimal expected = 258;
+            decimal actual = 0;// 
+
+            //2 Act
+
+            //  initialize cart
+
+            Cart cart = new Cart();
+            // addproducts
+
+            cart.AddProduct(products.First(p => p.SKU == "A"), 3);
+            cart.AddProduct(products.First(p => p.SKU == "B"), 5);
+            cart.AddProduct(products.First(p => p.SKU == "C"), 2); 
+
+
+            cart.AddPromotions(lstFestivalOffers);
+
+            // setup promotions to cart 
+            // need to introduce a way to handle promotions to Cart and robust Product handling mechanism
+
+            //checkout
+            cart.Checkout();
+
+            actual = cart.Total;
+
+
+            //3 Assert
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
 

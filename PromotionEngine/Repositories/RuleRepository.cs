@@ -69,5 +69,27 @@ namespace PromotionEngine.Repositories
             return filteredRules;
         }
 
+
+        public List<Promotion> GetFestivalOffers()
+        {
+            _promotions = new List<Promotion>()
+            {
+                new SimplePromotion () {
+                    RuleID =1 , RuleName ="3 Of A's" , Description = "3 Of A's for 130 " , IsActive =true ,
+                    Group =   new Criteria () { ProductName ="A" , Qty =3 , OfferedPrice =130}
+                },
+                new SimplePromotion () {
+                    RuleID =2 , RuleName ="2 Of B's" , Description = "2 Of B's for 45 " , IsActive =true  ,
+                     Group =   new Criteria () { ProductName ="B" , Qty =2 , OfferedPrice =45}
+                },
+                 new DiscountedPromotion () {
+                    RuleID =3 , RuleName =" C 20% off" , Description = "C " , IsActive =true ,
+                     Group =   new DiscountCriteria () { ProductName ="C" , Qty = 1  ,Discount =0.80m }
+
+                 }
+
+            };
+            return _promotions;
+        }
     }
 }
