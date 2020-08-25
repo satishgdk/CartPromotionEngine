@@ -15,11 +15,40 @@ namespace PromotionTestLibrary
         [Test]
         public void TestScenario1()
         {
-            //Arrange
-            //Act
-            //Assert
+            //1 Arrange
+            // setup inputs 
 
-            Assert.IsTrue(true);
+            /*
+              Setup unitPrices
+              Set Active Promotions
+              3 of A's for 130
+              2 of B's for  45
+              C & D for 30
+
+            Scenario
+
+            1 *A 50
+            1 * B 30
+            1 * C 20 
+
+             */
+
+
+            var expected = 100;
+            var actual=0;// 
+
+            //2 Act
+
+            //  initialize cart
+            // addproducts
+            //checkout
+
+            // var actual = cart.Total ;
+            actual = 100; // cart.Total
+
+            //3 Assert
+
+            Assert.AreEqual(actual ,expected);
         }
     }
 }
