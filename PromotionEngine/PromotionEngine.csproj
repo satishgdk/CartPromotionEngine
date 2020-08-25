@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Criteria.cs" />
     <Compile Include="Entities\GroupPromotion.cs" />
-    <Compile Include="Entities\SimplePromotion.cs" />
     <Compile Include="Entities\Promotion.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Product.cs" />

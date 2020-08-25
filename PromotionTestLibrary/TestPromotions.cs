@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit;
 using NUnit.Framework;
+using PromotionEngine;
+using PromotionEngine.Repositories;
 
 namespace PromotionTestLibrary
 {
@@ -17,6 +19,12 @@ namespace PromotionTestLibrary
         {
             //1 Arrange
             // setup inputs 
+
+            RuleRepository promotionDB = new RuleRepository();
+
+            var lstActivePromotions = promotionDB.GetActiveRules();
+            ProductRepository productContext = new ProductRepository();
+            var products = productContext.Products;
 
             /*
               Setup unitPrices
@@ -34,17 +42,29 @@ namespace PromotionTestLibrary
              */
 
 
-            var expected = 100;
-            var actual=0;// 
+            decimal expected = 100;
+            decimal actual=0;// 
 
             //2 Act
 
             //  initialize cart
-            // addproducts
-            //checkout
 
-            // var actual = cart.Total ;
-            actual = 100; // cart.Total
+            Cart cart = new Cart();
+            // addproducts
+
+            cart.AddProduct(products.First(p => p.SKU == "A"), 1);
+            cart.AddProduct(products.First(p => p.SKU == "B"), 1);
+            cart.AddProduct(products.First(p => p.SKU == "C"), 1);
+
+
+            // setup promotions to cart 
+            // need to introduce a way to handle promotions to Cart and robust Product handling mechanism
+
+            //checkout
+            cart.Checkout();
+
+               actual = cart.Total ;
+             
 
             //3 Assert
 

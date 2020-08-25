@@ -29,8 +29,25 @@ namespace PromotionEngine.Repositories
         {
             _promotions = new List<Promotion>()
             {
-                new SimplePromotion () { RuleID =1 , RuleName = "3As for 130" , Description ="3 Combo offer" , IsActive =true}
+                new SimplePromotion () {
+                    RuleID =1 , RuleName ="3 Of A's" , Description = "3 Of A's for 130 " , IsActive =true ,
+                    Group =   new Criteria () { ProductName ="A" , Qty =3 , OfferedPrice =130}
+                },
+                new SimplePromotion () {
+                    RuleID =2 , RuleName ="2 Of B's" , Description = "2 Of B's for 45 " , IsActive =true  ,
+                     Group =   new Criteria () { ProductName ="B" , Qty =2 , OfferedPrice =45}
+                },
+                 new GroupedPromotion () {
+                    RuleID =3 , RuleName =" C & D " , Description = "C & D for 30 " , IsActive =true ,
+                     Groups = new List<Criteria>()
+                     {
+                         new Criteria () { ProductName ="C" , Qty = 1  ,OfferedPrice =30},
+                         new Criteria () { ProductName ="D" , Qty = 1 , OfferedPrice =  0 }
+
+                     }
+                 }
             };
+
         }
 
         /// <summary>
@@ -41,8 +58,16 @@ namespace PromotionEngine.Repositories
             get { return _promotions; }
             set { _promotions = value; }
         }
-
-
+         
+        /// <summary>
+        /// Defined own methods for repository to filter data from own sources
+        /// </summary>
+        /// <returns></returns>
+        public List<Promotion> GetActiveRules()
+        {
+            var filteredRules = _promotions.Where(r => r.IsActive == true).ToList();
+            return filteredRules;
+        }
 
     }
 }
